@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  background-color: #18181b;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.nav-element > a {
+  font-weight: 500;
+  font-size: large;
+  
+}
+.nav-element > a:hover{
+  color: purple;
+  
+}
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.icon{
+  transition: transform 400ms ease;
+}
+.icon:hover{
+  transform: scale(1.1);
+}
+
+.card{
+  color: white;
+  background-size: cover;
+  height: 25rem;
+  overflow: hidden;
+  transition: transform 500ms ease-out;
+  
+}
+.card:hover,
+.card:focus-within{
+  transform: scale(1.03);
+}
+
+.card-content{
+  background: linear-gradient(
+    hsl(0 0% 0%/ 0), 
+    hsl(0 0% 0%/0.4) 30%, 
+    hsl(0 0% 0%/1));
+ 
+}
+
+@media (hover) {
+  .card-content{
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+  .card:hover .card-content,
+  .card:focus-within .card-content{
+    transform: translateY(0);
+    transition-delay: 500ms;
+  }
+
+  /*prevents glitches*/
+  .card:focus-within .card-content{
+    transition-duration: 0ms;
+  }
+
+  .card--extra{
+    opacity: 0;
+    transition: transform 500ms linear;
+  }
+  .card:hover .card--extra,
+  .card:focus-within .card--extra{
+    opacity: 1;
+    transition-delay: 500ms;
+  }
+}
+
+
+
+.card--button:hover{
+  color: purple;
+}
