@@ -27,7 +27,7 @@ const socials = [
   },
   {
     icon: faMedium,
-    url: "https://medium.com",
+    url: "https://medium.com/@mihirrohilla488",
   },
   {
     icon: faStackOverflow,

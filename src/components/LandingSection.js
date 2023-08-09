@@ -32,7 +32,7 @@ const LandingSection = () => (
           </Heading>
         </VStack>
       </VStack>
-      <Avatar size='3xl' name='Mihir' src='https://bit.ly/dan-abramov' />
+      <Avatar size='3xl' name='Mihir' src={require("../images/profile.jpg")} />
     </HStack>
   </FullScreenSection>
 );

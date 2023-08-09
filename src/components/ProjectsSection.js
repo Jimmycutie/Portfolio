@@ -5,9 +5,9 @@ import Cards from "./Cards";
 
 const projects = [
   {
-    title: "React Space",
+    title: "Air Bnb Eperiences Prototype",
     description:
-      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+      "A prototype of website of Airbnb Experiences using React app and using Tailwind CSS integrations.",
     image: "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/384-felix-mg-4715.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f1d46f5bc997f6de7926e7557c0c4f09",
   },
   {
@@ -17,15 +17,15 @@ const projects = [
     image: "https://images.pexels.com/photos/4069292/pexels-photo-4069292.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
   },
   {
-    title: "Photo Gallery",
+    title: "Bird Species Classifier",
     description:
-      "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
+      "An application that can classify different objects as birds and classify it among 200 differnet species of birds.",
     image: "https://images.pexels.com/photos/15023049/pexels-photo-15023049.jpeg?cs=srgb&dl=pexels-emmanuel-edel-15023049.jpg&fm=jpg",
   },
   {
-    title: "Event planner",
+    title: "Coffee Shop Website",
     description:
-      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
+      "A One-stop shop for a restaurant to display the menu items and manage, track orders and user profiles.",
     image: "https://images.pexels.com/photos/10942519/pexels-photo-10942519.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
   },
 ];
