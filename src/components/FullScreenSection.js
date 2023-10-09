@@ -7,9 +7,10 @@ import { VStack } from "@chakra-ui/react";
 const FullScreenSection = ({ children, isDarkBackground, ...boxProps }) => {
   return (
     <VStack
-      backgroundImage = "https://wallpapers.com/images/featured/dark-city-7ws46k7xo1gcptjo.jpg"
+      backgroundImage = "https://www.freepsd360.com/wp-content/uploads/2022/12/Blur-Background-Full-HD-4k-Free-Download-37.jpg"
       backgroundRepeat= "no-repeat"
       backgroundAttachment= "fixed"
+      backgroundSize="cover"
       // backgroundColor={boxProps.backgroundColor}
       color={isDarkBackground ? "white" : "black"}
     >

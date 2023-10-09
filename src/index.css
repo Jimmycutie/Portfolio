@@ -15,6 +15,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.nav{
+  display: absolute;
+  background-color: rgba(235, 235, 235, 0.105);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 9999;
+}
 .nav-element > a {
   font-weight: 500;
   font-size: large;
@@ -44,7 +51,7 @@ button[disabled]{
   height: 25rem;
   overflow: hidden;
   transition: transform 500ms ease-out;
-  
+  z-index: 10;
 }
 .card:hover,
 .card:focus-within{

@@ -101,27 +101,29 @@ const Header = () => {
       background="transparent"
       ref={headerRef}
     >
-      <Box color="white" maxWidth="1280px" margin="0 auto">
-        <HStack
-          px={16}
-          py={4}
-          justifyContent="space-between"
-          alignItems="center"
-        >
-          <nav>
-            <HStack spacing={8}>
-              {social}
-            </HStack>
-          </nav>
-          <nav>
-            <HStack className="nav-element" spacing={8}>
-              <a href="#home-section" onClick={handleClick("home")}>Home</a>
-              <a href="#projects-section" onClick={handleClick("projects")}>Projects</a>
-              <a href="#contactme-section" onClick={handleClick("contactme")}>Contact Me</a>
-            </HStack>
-          </nav>
-        </HStack>
-      </Box>
+      <div className="nav">
+        <Box color="white" maxWidth="1280px" margin="0 auto">
+          <HStack
+            px={16}
+            py={4}
+            justifyContent="space-between"
+            alignItems="center"
+          >
+            <nav>
+              <HStack spacing={8}>
+                {social}
+              </HStack>
+            </nav>
+            <nav>
+              <HStack className="nav-element" spacing={8}>
+                <a href="#home-section" onClick={handleClick("home")}>Home</a>
+                <a href="#projects-section" onClick={handleClick("projects")}>Projects</a>
+                <a href="#contactme-section" onClick={handleClick("contactme")}>Contact Me</a>
+              </HStack>
+            </nav>
+          </HStack>
+        </Box>
+      </div>
     </Box>
   );
 };
