@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@500&family=Karla:wght@400;500;600;700&family=Martian+Mono:wght@200;300;400;500;600;700&display=swap');
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,8 +15,10 @@ html {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Karla', sans-serif;
+  font-family: 'Martian Mono', monospace;
 }
 .nav{
   display: absolute;
@@ -97,4 +102,12 @@ button[disabled]{
 
 .card--button:hover{
   color: purple;
+}
+
+#canvas {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  z-index: -1;
 }

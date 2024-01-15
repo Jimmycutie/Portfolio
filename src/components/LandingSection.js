@@ -30,15 +30,15 @@ const LandingSection = () => (
       <VStack
         spacing={2}
       >
-        <Heading as='h2' size='lg' noOfLines={1}>
+        <Heading as='h2' size='lg' noOfLines={1} fontFamily={'Martian Mono'} fontWeight={500}>
           {greeting}
         </Heading>
         <VStack spacing={10}>
-          <Heading as='h2' size='2xl' noOfLines={1}>
+          <Heading as='h2' size='2xl' noOfLines={1} fontFamily={'Martian Mono'} fontWeight={700}>
             {bio1}
           </Heading>
           <HStack spacing={6}>
-            <Heading as='h2' size='lg' noOfLines={1}>
+            <Heading as='h2' size='lg' noOfLines={1} fontFamily={'Martian Mono'} fontWeight={600}>
               {bio2}
             </Heading>
             {skills.map(skill => (<FontAwesomeIcon icon={skill} size='2x'/>))}

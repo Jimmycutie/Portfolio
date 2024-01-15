@@ -1,4 +1,4 @@
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import Header from "./components/Header";
 import LandingSection from "./components/LandingSection";
 import ProjectsSection from "./components/ProjectsSection";
@@ -7,15 +7,21 @@ import Footer from "./components/Footer";
 import { AlertProvider } from "./context/alertContext";
 import Alert from "./components/Alert";
 
+const theme = extendTheme({
+  styles: {
+    global: () => ({
+      body: {
+        background: ""
+      }
+    })
+  }
+});
+
 function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <AlertProvider>
-        <main
-          backgroudClip = "content-box"
-          backgroundRepeat= "no-repeat"
-          backgroundImage="https://wallpapers.com/images/featured/dark-city-7ws46k7xo1gcptjo.jpg"
-        >
+        <main>
           <Header />
           <LandingSection />
           <ProjectsSection />
