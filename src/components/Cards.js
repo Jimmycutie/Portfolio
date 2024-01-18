@@ -16,6 +16,7 @@ const Cards = ({ title, description, image }) => {
       className="card" 
       backgroundImage= {image}
       color={"whiteAlpha.800"}
+      zIndex={0}
     >
         <CardBody>
         </CardBody>

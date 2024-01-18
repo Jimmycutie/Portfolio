@@ -100,6 +100,7 @@ const Header = () => {
       transitionTimingFunction="ease-in-out"
       background="transparent"
       ref={headerRef}
+      zIndex={2}
     >
       <div className="nav">
         <Box color="white" maxWidth="1280px" margin="0 auto">

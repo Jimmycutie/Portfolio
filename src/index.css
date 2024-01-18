@@ -25,7 +25,9 @@ code {
   background-color: rgba(235, 235, 235, 0.105);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  z-index: 9999;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  z-index: 2;
 }
 .nav-element > a {
   font-weight: 500;
@@ -56,7 +58,7 @@ button[disabled]{
   height: 25rem;
   overflow: hidden;
   transition: transform 500ms ease-out;
-  z-index: 10;
+  z-index: 0;
 }
 .card:hover,
 .card:focus-within{
