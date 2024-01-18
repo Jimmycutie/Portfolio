@@ -86,7 +86,12 @@ const LandingSection = () => {
               </FormControl>
               <FormControl>
                 <FormLabel htmlFor="type">Type of enquiry</FormLabel>
-                <Select id="type" name="type" {...formik.getFieldProps('type')}>
+                <Select bg='black'
+                  sx={{
+                    '> option': {
+                      background: 'rgba(235, 235, 235, 0.105)',
+                    },
+                  }} id="type" name="type" {...formik.getFieldProps('type')}>
                   <option value="none">Please select</option>
                   <option value="hireMe">Freelance project proposal</option>
                   <option value="openSource">
