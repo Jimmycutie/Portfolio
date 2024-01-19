@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -7,8 +7,8 @@ import {
   faMedium,
   faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
-import { Box, HStack } from "@chakra-ui/react";
-import { head } from "lodash";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Box, HStack, VStack } from "@chakra-ui/react";
 
 
 
@@ -88,6 +88,11 @@ const Header = () => {
       </a>
     )
   })
+
+  const [toggle, setToggle] = useState(false)
+  const handletoggle = () => {
+    setToggle(!toggle)
+  }
   return (
     <Box
       position="fixed"
@@ -110,9 +115,18 @@ const Header = () => {
             justifyContent="space-between"
             alignItems="center"
           >
-            <nav>
+            <nav className="socials-icon">
               <HStack spacing={8}>
                 {social}
+              </HStack>
+            </nav>
+            <nav className="socials-icon2">
+              <HStack spacing={8}>
+                <FontAwesomeIcon 
+                  icon={faBars} size="lg"
+                  className="icon"
+                  onClick={handletoggle}
+                />
               </HStack>
             </nav>
             <nav>
@@ -125,6 +139,14 @@ const Header = () => {
           </HStack>
         </Box>
       </div>
+      {
+        toggle && 
+        <div className="popup">
+          <VStack spacing={2} color={"white"}>
+            {social}
+          </VStack>
+        </div>
+      }
     </Box>
   );
 };

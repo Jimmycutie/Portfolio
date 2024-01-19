@@ -20,6 +20,19 @@ code {
   font-family: 'Karla', sans-serif;
   font-family: 'Martian Mono', monospace;
 }
+@media screen and (max-width: 720px) {
+  .socials-icon {
+    display: none;
+  }
+  .socials-icon2 {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 720px) {
+  .socials-icon2 {
+    display: none;
+  }
+}
 .nav{
   display: absolute;
   background-color: rgba(235, 235, 235, 0.105);
@@ -32,12 +45,24 @@ code {
 .nav-element > a {
   font-weight: 500;
   font-size: large;
-  
 }
 .nav-element > a:hover{
   color: purple;
   
 }
+
+.popup{
+  display: absolute;
+  width: fit-content;
+  margin-left: 4.5%;
+  background-color: rgba(235, 235, 235, 0.105);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  z-index: 2;
+  padding: 20px 20px;
+}
+
 button:disabled,
 button[disabled]{
   border: 1px solid #999999;

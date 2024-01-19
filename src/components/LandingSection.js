@@ -26,26 +26,26 @@ const LandingSection = () => (
     background="transparent"
     id="home-section"
   >
-    <HStack spacing={6}>
+    <HStack spacing={{sm: "2", md: "6"}}>
       <VStack
         spacing={2}
       >
-        <Heading as='h2' size='lg' noOfLines={1} fontFamily={'Martian Mono'} fontWeight={500}>
+        <Heading as='h2' size={{sm: "sm", sm:"", md: "md", xl: 'lg'}} noOfLines={1} fontFamily={'Martian Mono'} fontWeight={500}>
           {greeting}
         </Heading>
         <VStack spacing={10}>
-          <Heading as='h2' size='2xl' noOfLines={1} fontFamily={'Martian Mono'} fontWeight={700}>
+          <Heading as='h2' size={{sm: "md", md: "xl", xl: '2xl'}} noOfLines={1} fontFamily={'Martian Mono'} fontWeight={700}>
             {bio1}
           </Heading>
           <HStack spacing={6}>
-            <Heading as='h2' size='lg' noOfLines={1} fontFamily={'Martian Mono'} fontWeight={600}>
+            <Heading as='h2' size={{sm: "sm", md: "md", xl: 'lg'}} noOfLines={1} fontFamily={'Martian Mono'} fontWeight={600}>
               {bio2}
             </Heading>
             {skills.map(skill => (<FontAwesomeIcon icon={skill} size='2x'/>))}
           </HStack>
         </VStack>
       </VStack>
-      <Avatar size='3xl' name='Mihir' src={require("../images/profile.jpg")} />
+      <Avatar size={{base:'md', sm: "lg", md: "2xl", xl: '3xl'}} name='Mihir' src={require("../images/profile.jpg")} />
     </HStack>
   </FullScreenSection>
 );
