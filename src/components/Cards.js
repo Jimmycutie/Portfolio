@@ -1,14 +1,13 @@
-import { color, Heading, HStack, Image, Text, VStack } from "@chakra-ui/react";
-import { Card, CardHeader, CardBody, CardFooter, Stack, Button } from '@chakra-ui/react'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Heading, Text } from "@chakra-ui/react";
+import { Card, CardBody, CardFooter, Stack, Button } from '@chakra-ui/react'
 import React from "react";
+import { Link } from "@chakra-ui/react";
 
-const Cards = ({ title, description, image }) => {
+
+const Cards = ({ title, description, image, url }) => {
   // Implement the UI for the Card component according to the instructions.
   // You should be able to implement the component with the elements imported above.
   // Feel free to import other UI components from Chakra UI if you wish to.
-  console.log("card rendered")
   return (
     <Card 
       maxW='sm' 
@@ -31,9 +30,9 @@ const Cards = ({ title, description, image }) => {
               <Text>
                 {description}
               </Text>
-              <Button className="card--button" variant='ghost' colorScheme='black'>
+              <Link className="card--button" href={url} isExternal>
                 See more &rarr;
-              </Button>
+              </Link>
             </div>
           </Stack>
         </CardFooter>

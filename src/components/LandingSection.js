@@ -1,8 +1,7 @@
 import React from "react";
-import { Avatar, HStack, Heading, VStack } from "@chakra-ui/react";
+import { Avatar, Flex, HStack, Heading, VStack } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faReact,
   faHtml5,
@@ -10,6 +9,7 @@ import {
   faNodeJs,
   faPython,
 } from "@fortawesome/free-brands-svg-icons";
+
 
 const greeting = "Hello, I am Mihir!";
 const bio1 = "Software Developer";
@@ -69,11 +69,11 @@ const LandingSection = () => (
       </HStack>
       
       
-      <VStack spacing={6} alignItems={"flex-start"}>
+      <VStack spacing={6} alignItems={"flex-start"} width={"100%"}>
         <Heading as='h2' size={{sm: "sm", md: "md", xl: 'lg'}} noOfLines={1} fontFamily={'Martian Mono'} fontWeight={600}>
           {bio2}
         </Heading>
-        <HStack spacing={10}>
+        <HStack width={"100%"} justifyContent={"space-between"}>
           {skills.map(skill => (<FontAwesomeIcon icon={skill} size='2x'/>))}
         </HStack>
       </VStack>
