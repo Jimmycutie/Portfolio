@@ -56,7 +56,7 @@ const LandingSection = () => (
       alignItems={"flex-start"}
       p={8}
     >
-      <HStack spacing={4} className="intro-card">
+      <HStack spacing={2} className="intro-card">
         <VStack>
           <Heading as='h2' size={{sm: "sm", sm:"", md: "md", xl: 'lg'}} noOfLines={1} fontFamily={'Martian Mono'} fontWeight={500}>
             {greeting}
