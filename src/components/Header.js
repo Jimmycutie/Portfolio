@@ -110,7 +110,7 @@ const Header = () => {
       <div className="nav">
         <Box color="white" maxWidth="1280px" margin="0 auto">
           <HStack
-            px={16}
+            px={{base: 5, sm: 10, md:10, xl:16}}
             py={4}
             justifyContent="space-between"
             alignItems="center"

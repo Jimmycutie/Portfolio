@@ -27,6 +27,13 @@ code {
   .socials-icon2 {
     display: inline-block;
   }
+  .nav-element > a {
+    font-weight: 500;
+    font-size: small;
+  }
+  .wide-window{
+    display: none;
+  }
 }
 @media screen and (min-width: 720px) {
   .socials-icon2 {
@@ -62,7 +69,14 @@ code {
   z-index: 2;
   padding: 20px 20px;
 }
-
+.intro-card{
+  width: fit-content;
+  background-color: rgba(235, 235, 235, 0.105);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  padding: 10px 10px;
+}
 button:disabled,
 button[disabled]{
   border: 1px solid #999999;
