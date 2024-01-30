@@ -5,11 +5,11 @@ import Cards from "./Cards";
 
 const projects = [
   {
-    title: "Air Bnb Eperiences Prototype",
+    title: "Influenzilla",
     description:
-      "A prototype of website of Airbnb Experiences using React app and using Tailwind CSS integrations.",
+      "One stop destination that provides services from designing eye-catching logos and brand identities, to crafting effective influencer marketing campaigns",
     image: "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/384-felix-mg-4715.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f1d46f5bc997f6de7926e7557c0c4f09",
-    url: ""
+    url: "https://influenzilla-iota.vercel.app/"
   },
   {
     title: "Finanace Dashboard",

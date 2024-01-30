@@ -70,10 +70,6 @@ code {
   padding: 20px 20px;
 }
 
-.skills{
-  display: flex;
-  justify-content: space-between;
-}
 .intro-card{
   width: fit-content;
   background-color: rgba(235, 235, 235, 0.105);
